@@ -30,3 +30,4 @@ extra_javascript:
 # 导航
 nav:
     - Home: index.md
+    - Config: config.md
