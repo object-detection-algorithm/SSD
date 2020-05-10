@@ -31,3 +31,8 @@ extra_javascript:
 nav:
     - Home: index.md
     - Config: config.md
+    - Data:
+        - 引言: data/index.md
+        - Transforms:
+            - 引言: data/transforms/index.md
+            - 格式转换: data/transforms/格式转换.md
