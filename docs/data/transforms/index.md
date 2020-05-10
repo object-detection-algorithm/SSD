@@ -13,3 +13,5 @@
 5. 随机镜像：`RandomMirror`
 6. 图像缩放：`Resize`
 7. 数据标准化：`SubtractMeans`
+
+同时自定义了一个`Compose`类，用于级联上述实现，并额外添加新的操作
