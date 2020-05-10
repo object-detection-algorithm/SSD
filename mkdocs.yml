@@ -38,3 +38,4 @@ nav:
             - 格式转换: data/transforms/格式转换.md
             - 光度扭曲: data/transforms/光度扭曲.md
             - 图像扩展: data/transforms/图像扩展.md
+            - 随机裁剪: data/transforms/随机裁剪.md
