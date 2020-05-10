@@ -12,4 +12,4 @@
 4. 随机裁剪：`RandomSampleCrop`
 5. 随机镜像：`RandomMirror`
 6. 图像缩放：`Resize`
-7. 减去均值：`SubtractMeans`
+7. 数据标准化：`SubtractMeans`

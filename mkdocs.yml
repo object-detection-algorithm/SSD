@@ -41,3 +41,4 @@ nav:
             - 随机裁剪: data/transforms/随机裁剪.md
             - 随机镜像: data/transforms/随机镜像.md
             - 图像缩放: data/transforms/图像缩放.md
+            - 数据标准化: data/transforms/数据标准化.md
