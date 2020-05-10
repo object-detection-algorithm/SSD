@@ -49,9 +49,9 @@ $ pip install -r requirements.txt
 
 ## 致谢
 
-### 引用
-
 * [lufficc/SSD](https://github.com/lufficc/SSD)
+
+### 引用
 
 ```
 @misc{liu2015ssd,
