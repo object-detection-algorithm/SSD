@@ -42,17 +42,28 @@ class Expand(object):
 if __name__ == '__main__':
     import cv2
     import numpy as np
-    import torch
+    import matplotlib.pyplot as plt
     from ssd.config import cfg
 
-    img = cv2.imread('/home/zj/test/TEST/data/003123.jpg').astype(np.float32)
-    cv2.imshow('img', img.astype(np.uint8))
+    img = cv2.imread('../../../datasets/008591.jpg')
+    img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
+    boxes = np.array([[33, 44, 123, 210]])
 
     model = Expand(cfg.INPUT.PIXEL_MEAN)
-    print(model)
 
-    outputs, _, _ = model(img, None, None)
+    f = plt.figure()
+    rows = 3
+    cols = 3
 
-    outputs = outputs.astype(np.uint8)
-    cv2.imshow('out', outputs)
-    cv2.waitKey(0)
+    plt.subplot(rows, cols, 1)
+    plt.title('src')
+    plt.imshow(img), plt.axis('off')
+    for i in range(rows):
+        for j in range(cols):
+            if i == 0 and j == 0:
+                continue
+            plt.subplot(rows, cols, i * cols + j + 1)
+            res, res_boxes, _ = model(img.astype(np.float32), boxes, None)
+            plt.imshow(res.astype(np.uint8)), plt.axis('off')
+            print('{}-{} : {}'.format(i, j, res_boxes))
+    plt.show()
