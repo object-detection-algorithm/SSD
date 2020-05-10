@@ -1,5 +1,5 @@
 # compilation and distribution
-datasets/
+/datasets/
 .idea
 
 __pycache__
