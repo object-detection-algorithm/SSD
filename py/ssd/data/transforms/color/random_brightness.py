@@ -28,7 +28,7 @@ if __name__ == '__main__':
     import numpy as np
     import matplotlib.pyplot as plt
 
-    img = cv2.imread('../../../../data/008591.jpg')
+    img = cv2.imread('../../../../datasets/008591.jpg')
     img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
     model = RandomBrightness()
 
