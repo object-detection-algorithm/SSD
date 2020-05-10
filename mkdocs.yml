@@ -36,3 +36,4 @@ nav:
         - Transforms:
             - 引言: data/transforms/index.md
             - 格式转换: data/transforms/格式转换.md
+            - 光度扭曲: data/transforms/光度扭曲.md
