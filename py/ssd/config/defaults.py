@@ -56,9 +56,9 @@ _C.INPUT.PIXEL_MEAN = [123, 117, 104]
 # -----------------------------------------------------------------------------
 _C.DATASETS = CN()
 # List of the dataset names for training, as present in paths_catalog.py
-_C.DATASETS.TRAIN = ()
+_C.DATASETS.TRAIN = ("voc_2007_trainval", "voc_2012_trainval")  # ()
 # List of the dataset names for testing, as present in paths_catalog.py
-_C.DATASETS.TEST = ()
+_C.DATASETS.TEST = ("voc_2007_test",)  # ()
 
 # -----------------------------------------------------------------------------
 # DataLoader
