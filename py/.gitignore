@@ -1,6 +1,7 @@
 # compilation and distribution
-data/
+datasets/
 .idea
+
 __pycache__
 *.pyc
 *.so
