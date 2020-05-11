@@ -47,3 +47,4 @@ nav:
         - 引言: log/index.md
         - 文本日志: log/文本日志.md
         - 可视化日志: log/可视化日志.md
+    - CheckPoint: checkpointer.md
