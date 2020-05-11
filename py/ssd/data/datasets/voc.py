@@ -99,3 +99,26 @@ class VOCDataset(torch.utils.data.Dataset):
         image = Image.open(image_file).convert("RGB")
         image = np.array(image)
         return image
+
+
+if __name__ == '__main__':
+    from ssd.config import cfg
+    from ssd.data.transform import build_transforms
+    from ssd.data.target_transform import build_target_transform
+    from ssd.data.datasets import build_dataset
+
+    is_train = True
+
+    train_transform = build_transforms(cfg, is_train=is_train)
+    target_transform = build_target_transform(cfg) if is_train else None
+    dataset_list = cfg.DATASETS.TRAIN if is_train else cfg.DATASETS.TEST
+    datasets = build_dataset(dataset_list, transform=train_transform, target_transform=target_transform,
+                             is_train=is_train)
+
+    image, targets, index = datasets[0].__getitem__(200)
+    boxes = targets['boxes']
+    labels = targets['labels']
+    print(image.shape)
+    print(boxes.shape)
+    print(labels.shape)
+    print(index)
