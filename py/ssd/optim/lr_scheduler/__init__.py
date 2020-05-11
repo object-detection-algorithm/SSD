@@ -7,4 +7,6 @@
 @description: 
 """
 
+__all__ = ['WarmupMultiStepLR']
+
 from .warmup_multi_step_lr import WarmupMultiStepLR

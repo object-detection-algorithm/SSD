@@ -10,7 +10,7 @@ from ssd.config import cfg
 from ssd.data.build import make_data_loader
 from ssd.engine.trainer import do_train
 from ssd.models.detector import build_detection_model
-from ssd.optim.build import make_optimizer, make_lr_scheduler
+from ssd.optim import make_optimizer, make_lr_scheduler
 from ssd.utils import dist_util, mkdir
 from ssd.utils.checkpoint import CheckPointer
 from ssd.utils.dist_util import synchronize
