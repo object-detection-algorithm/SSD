@@ -43,3 +43,7 @@ nav:
             - 图像缩放: data/transforms/图像缩放.md
             - 数据标准化: data/transforms/数据标准化.md
             - Compose: data/transforms/Compose.md
+    - Log:
+        - 引言: log/index.md
+        - 文本日志: log/文本日志.md
+        - 可视化日志: log/可视化日志.md
