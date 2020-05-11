@@ -48,3 +48,7 @@ nav:
         - 文本日志: log/文本日志.md
         - 可视化日志: log/可视化日志.md
     - CheckPoint: checkpointer.md
+    - Optim:
+        - 引言: optim/index.md
+        - 梯度更新: optim/梯度更新.md
+        - 学习率调度: optim/学习率调度.md
