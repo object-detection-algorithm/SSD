@@ -1,4 +1,6 @@
 # compilation and distribution
+outputs/
+
 /datasets/
 .idea
 
