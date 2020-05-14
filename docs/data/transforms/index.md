@@ -1,7 +1,9 @@
 
 # 图像预处理
 
-实现了以下图像预处理操作
+## 预处理操作
+
+对于目标检测算法，常用以下预处理操作进行数据扩充
 
 1. 格式转换
       1. `ConvertFromInts`
@@ -14,4 +16,14 @@
 6. 图像缩放：`Resize`
 7. 数据标准化：`SubtractMeans`
 
-同时自定义了一个`Compose`类，用于级联上述实现，并额外添加新的操作
+## 构建转换器
+
+定义函数`build_transforms`，调用上述预处理操作
+
+* `py/ssd/data/transforms/build.py`
+
+## `__init__.py`
+
+所有图像预处理操作可通过模块文件调用
+
+* `py/ssd/data/transforms/__init__.py`

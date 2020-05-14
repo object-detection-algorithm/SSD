@@ -40,10 +40,9 @@ nav:
             - 引言: log/index.md
             - 文本日志: log/text_log.md
             - 可视化日志: log/visualization_log.md
-    - SSD算法:
-        - Data:
+        - 数据模块:
             - 引言: data/index.md
-            - Transforms:
+            - 图像预处理:
                 - 引言: data/transforms/index.md
                 - 格式转换: data/transforms/格式转换.md
                 - 光度扭曲: data/transforms/光度扭曲.md
@@ -53,6 +52,8 @@ nav:
                 - 图像缩放: data/transforms/图像缩放.md
                 - 数据标准化: data/transforms/数据标准化.md
                 - Compose: data/transforms/Compose.md
+                
+    - SSD算法:
 
         - CheckPoint: checkpointer.md
         - Optim:
