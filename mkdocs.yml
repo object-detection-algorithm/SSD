@@ -36,6 +36,10 @@ nav:
             - 命令行参数: config/arg_parse.md
             - YAML配置: config/yaml.md
             - 数据集路径解析: config/dataset_path.cmd
+        - 日志模块:
+            - 引言: log/index.md
+            - 文本日志: log/text_log.md
+            - 可视化日志: log/visualization_log.md
     - SSD算法:
         - Data:
             - 引言: data/index.md
@@ -49,10 +53,7 @@ nav:
                 - 图像缩放: data/transforms/图像缩放.md
                 - 数据标准化: data/transforms/数据标准化.md
                 - Compose: data/transforms/Compose.md
-        - Log:
-            - 引言: log/index.md
-            - 文本日志: log/文本日志.md
-            - 可视化日志: log/可视化日志.md
+
         - CheckPoint: checkpointer.md
         - Optim:
             - 引言: optim/index.md
