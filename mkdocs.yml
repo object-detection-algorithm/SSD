@@ -30,25 +30,31 @@ extra_javascript:
 # 导航
 nav:
     - Home: index.md
-    - Config: config.md
-    - Data:
-        - 引言: data/index.md
-        - Transforms:
-            - 引言: data/transforms/index.md
-            - 格式转换: data/transforms/格式转换.md
-            - 光度扭曲: data/transforms/光度扭曲.md
-            - 图像扩展: data/transforms/图像扩展.md
-            - 随机裁剪: data/transforms/随机裁剪.md
-            - 随机镜像: data/transforms/随机镜像.md
-            - 图像缩放: data/transforms/图像缩放.md
-            - 数据标准化: data/transforms/数据标准化.md
-            - Compose: data/transforms/Compose.md
-    - Log:
-        - 引言: log/index.md
-        - 文本日志: log/文本日志.md
-        - 可视化日志: log/可视化日志.md
-    - CheckPoint: checkpointer.md
-    - Optim:
-        - 引言: optim/index.md
-        - 梯度更新: optim/梯度更新.md
-        - 学习率调度: optim/学习率调度.md
+    - 训练框架:
+        - 配置模块:
+            - 引言: config/index.md
+            - 命令行参数: config/arg_parse.md
+            - YAML配置: config/yaml.md
+            - 数据集路径解析: config/dataset_path.cmd
+    - SSD算法:
+        - Data:
+            - 引言: data/index.md
+            - Transforms:
+                - 引言: data/transforms/index.md
+                - 格式转换: data/transforms/格式转换.md
+                - 光度扭曲: data/transforms/光度扭曲.md
+                - 图像扩展: data/transforms/图像扩展.md
+                - 随机裁剪: data/transforms/随机裁剪.md
+                - 随机镜像: data/transforms/随机镜像.md
+                - 图像缩放: data/transforms/图像缩放.md
+                - 数据标准化: data/transforms/数据标准化.md
+                - Compose: data/transforms/Compose.md
+        - Log:
+            - 引言: log/index.md
+            - 文本日志: log/文本日志.md
+            - 可视化日志: log/可视化日志.md
+        - CheckPoint: checkpointer.md
+        - Optim:
+            - 引言: optim/index.md
+            - 梯度更新: optim/梯度更新.md
+            - 学习率调度: optim/学习率调度.md
