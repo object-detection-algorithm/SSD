@@ -103,8 +103,7 @@ class VOCDataset(torch.utils.data.Dataset):
 
 if __name__ == '__main__':
     from ssd.config import cfg
-    from ssd.data.transform import build_transforms
-    from ssd.data.target_transform import build_target_transform
+    from ssd.data.transforms import build_transforms, build_target_transform
     from ssd.data.datasets import build_dataset
 
     is_train = True

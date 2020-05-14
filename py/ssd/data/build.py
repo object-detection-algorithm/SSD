@@ -4,8 +4,8 @@ from torch.utils.data.dataloader import default_collate
 
 from ssd.data.samples import IterationBasedBatchSampler, DistributedSampler
 from ssd.data.datasets import build_dataset
-from ssd.data.transform import build_transforms
-from ssd.data.target_transform import build_target_transform
+from ssd.data.transforms import build_transforms
+from ssd.data.transforms import build_target_transform
 
 from ssd.structures.container import Container
 
