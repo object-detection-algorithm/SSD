@@ -56,6 +56,7 @@ nav:
                 - 数据集路径解析: data/daetasets/dataset_path.cmd
                 - 数据集加载: data/datasets/dataset_load.md
                 - 数据集评估: data/datasets/dataset_eval.md
+            - 检查点读写: data/checkpoint.md
             
                 
     - SSD算法:

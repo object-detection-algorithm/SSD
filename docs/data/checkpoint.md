@@ -1,5 +1,5 @@
 
-# checkpointer
+# 检查点读写
 
 * 定义：`py/ssd/utils/checkpoint.py`
 * 声明：`py/train.py`
