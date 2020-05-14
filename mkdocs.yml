@@ -57,12 +57,8 @@ nav:
                 - 数据集加载: data/datasets/dataset_load.md
                 - 数据集评估: data/datasets/dataset_eval.md
             - 检查点读写: data/checkpoint.md
-            
-                
-    - SSD算法:
-
-        - CheckPoint: checkpointer.md
-        - Optim:
+        - 优化器模块:
             - 引言: optim/index.md
-            - 梯度更新: optim/梯度更新.md
-            - 学习率调度: optim/学习率调度.md
+            - 梯度更新: optim/gradient_update.md
+            - 学习率调度: optim/lr_scheduler.md                
+    # - SSD算法:

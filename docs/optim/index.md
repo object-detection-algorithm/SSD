@@ -3,23 +3,11 @@
 
 优化其分为`2`个部分：
 
-1. 梯度更新
-2. 学习率调度
+1. [梯度更新](./gradient_update.md)
+2. [学习率调度](./lr_scheduler.md)
 
+## `__init__.py`
 
-其涉及到配置参数有
+所有优化器操作可通过模块文件调用
 
-```
-_C.SOLVER = CN()
-# 梯度更新
-_C.SOLVER.BATCH_SIZE = 32
-_C.SOLVER.LR = 1e-3
-_C.SOLVER.MOMENTUM = 0.9
-# 学习率调度
-_C.SOLVER.MAX_ITER = 120000
-_C.SOLVER.LR_STEPS = [80000, 100000]
-_C.SOLVER.GAMMA = 0.1
-_C.SOLVER.WEIGHT_DECAY = 5e-4
-_C.SOLVER.WARMUP_FACTOR = 1.0 / 3
-_C.SOLVER.WARMUP_ITERS = 500
-```
+* `py/ssd/optim/__init__.py`

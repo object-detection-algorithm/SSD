@@ -1,11 +1,17 @@
 
 # 学习率调度
 
-* 定义：`py/ssd/optim/__init__.py`
-* 声明：`py/train.py`
-* 使用：`py/ssd/enine/trainer.py`
+## 自定义
 
-定义了一个辅助函数`make_lr_scheduler`来生成优化器
+* `py/ssd/optim/lr_scheduler/`
+
+可以调用`PyTorch`提供的学习率调度器，对于自定义的学习率调度器放置于`lr_scheduler`目录下
+
+## 封装
+
+* `py/ssd/optim/build.py`
+
+定义辅助函数`make_lr_scheduler`，根据配置要求生成优化器
 
 ```
 def make_lr_scheduler(cfg, optimizer, milestones=None):
