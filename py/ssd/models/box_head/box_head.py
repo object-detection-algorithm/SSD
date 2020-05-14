@@ -3,7 +3,7 @@ import torch.nn.functional as F
 
 from ssd.models import registry
 from ssd.models.anchors.prior_box import PriorBox
-from ssd.models.box_head.box_predictor import make_box_predictor
+from ssd.models.box_head import build_box_predictor
 from ssd.utils import box_utils
 from .inference import PostProcessor
 from .loss import MultiBoxLoss
@@ -14,7 +14,7 @@ class SSDBoxHead(nn.Module):
     def __init__(self, cfg):
         super().__init__()
         self.cfg = cfg
-        self.predictor = make_box_predictor(cfg)
+        self.predictor = build_box_predictor(cfg)
         self.loss_evaluator = MultiBoxLoss(neg_pos_ratio=cfg.MODEL.NEG_POS_RATIO)
         self.post_processor = PostProcessor(cfg)
         self.priors = None

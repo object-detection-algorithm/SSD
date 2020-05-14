@@ -64,7 +64,3 @@ class SSDLiteBoxPredictor(BoxPredictor):
         if level == num_levels - 1:
             return nn.Conv2d(out_channels, boxes_per_location * 4, kernel_size=1)
         return SeparableConv2d(out_channels, boxes_per_location * 4, kernel_size=3, stride=1, padding=1)
-
-
-def make_box_predictor(cfg):
-    return registry.BOX_PREDICTORS[cfg.MODEL.BOX_HEAD.PREDICTOR](cfg)
