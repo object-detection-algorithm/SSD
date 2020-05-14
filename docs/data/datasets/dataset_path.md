@@ -10,4 +10,4 @@
 
 ## 相关文件
 
-* `py/ssd/config/path_catalog.py`
+* `py/ssd/data/datasets/path_catalog.py`

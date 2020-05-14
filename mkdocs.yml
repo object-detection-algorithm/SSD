@@ -35,7 +35,6 @@ nav:
             - 引言: config/index.md
             - 命令行参数: config/arg_parse.md
             - YAML配置: config/yaml.md
-            - 数据集路径解析: config/dataset_path.cmd
         - 日志模块:
             - 引言: log/index.md
             - 文本日志: log/text_log.md
@@ -52,6 +51,12 @@ nav:
                 - 图像缩放: data/transforms/图像缩放.md
                 - 数据标准化: data/transforms/数据标准化.md
                 - Compose: data/transforms/Compose.md
+            - 数据集操作:
+                - 引言: data/datasets/index.md
+                - 数据集路径解析: data/daetasets/dataset_path.cmd
+                - 数据集加载: data/datasets/dataset_load.md
+                - 数据集评估: data/datasets/dataset_eval.md
+            
                 
     - SSD算法:
 
