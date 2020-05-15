@@ -3,7 +3,7 @@ import torch.nn.functional as F
 
 from ssd.models import registry
 from ssd.models.anchors.prior_box import PriorBox
-from ssd.models.box_head import build_box_predictor
+from ssd.models.box_head.box_predictor import build_box_predictor
 from ssd.utils import box_utils
 from .inference import PostProcessor
 from .loss import MultiBoxLoss
