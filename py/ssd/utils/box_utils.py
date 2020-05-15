@@ -92,21 +92,36 @@ def assign_priors(gt_boxes, gt_labels, corner_form_priors,
         boxes (num_priors, 4): real values for priors.
         labels (num_priros): labels for priors.
     """
-    # size: num_priors x num_targets
+    # size: [num_priors, num_targets]
+    # 每行表示单个先验框与各个标注框的IoU
+    # 每列表示单个标注框与各个先验框的IoU
     ious = iou_of(gt_boxes.unsqueeze(0), corner_form_priors.unsqueeze(1))
-    # size: num_priors
+    # size: [num_priors]
+    # best_target_per_prior：每个先验框计算得到的最高IoU
+    # best_target_per_prior_index：每个先验框对应最高IoU的标注框下标
     best_target_per_prior, best_target_per_prior_index = ious.max(1)
-    # size: num_targets
+    # size: [num_targets]
+    # best_prior_per_target：每个标注框计算得到的最高IoU
+    # best_prior_per_target_index：每个标注框对应最高IoU的先验框下标
     best_prior_per_target, best_prior_per_target_index = ious.max(0)
 
+    # 再一次确保标注框与最高IoU的先验框匹配
     for target_index, prior_index in enumerate(best_prior_per_target_index):
         best_target_per_prior_index[prior_index] = target_index
-    # 2.0 is used to make sure every target has a prior assigned
-    best_target_per_prior.index_fill_(0, best_prior_per_target_index, 2)
-    # size: num_priors
+
+    # size: [num_priors]
+    # 得到每个先验框对应标注框的标签/类别
     labels = gt_labels[best_target_per_prior_index]
-    labels[best_target_per_prior < iou_threshold] = 0  # the backgournd id
+    # size: [num_priors, 4]
+    # 得到每个先验框对应标注框的坐标
     boxes = gt_boxes[best_target_per_prior_index]
+
+    # 2.0 is used to make sure every target has a prior assigned
+    # 确保每个标注框对应IoU最高的先验框的阈值大于iou_threshold
+    best_target_per_prior.index_fill_(0, best_prior_per_target_index, 2)
+    # IoU小于iou_threshold的先验框设置为背景类别
+    labels[best_target_per_prior < iou_threshold] = 0  # the backgournd id
+
     return boxes, labels
 
 
