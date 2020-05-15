@@ -67,3 +67,4 @@ nav:
         - 引言: ssd/index.md
         - 基础网络: ssd/base_network.md
         - 先验框: ssd/prior_boxes.md
+        - 匹配策略: ssd/matching_strategy.md
