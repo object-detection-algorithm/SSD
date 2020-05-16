@@ -68,3 +68,4 @@ nav:
         - 基础网络: ssd/base_network.md
         - 先验框: ssd/prior_boxes.md
         - 匹配策略: ssd/matching_strategy.md
+        - 损失函数: ssd/loss_function.md
