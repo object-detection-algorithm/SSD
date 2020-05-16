@@ -7,4 +7,3 @@
 * [数据集操作](./datasets/index.md)
 * 采样策略
 * 批量策略
-* [检查点读写](./checkpoint.md)

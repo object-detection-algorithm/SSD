@@ -53,16 +53,17 @@ nav:
                 - Compose: data/transforms/Compose.md
             - 数据集操作:
                 - 引言: data/datasets/index.md
-                - 数据集路径解析: data/daetasets/dataset_path.cmd
+                - 数据集路径解析: data/datasets/dataset_path.md
                 - 数据集加载: data/datasets/dataset_load.md
                 - 数据集评估: data/datasets/dataset_eval.md
-            - 检查点读写: data/checkpoint.md
         - 检测器模块:
             - 引言: model/index.md
         - 优化器模块:
             - 引言: optim/index.md
             - 梯度更新: optim/gradient_update.md
             - 学习率调度: optim/lr_scheduler.md                
+        - 辅助模块:
+            - 检查点读写: util/checkpoint.md
     - SSD算法:
         - 引言: ssd/index.md
         - 基础网络: ssd/base_network.md

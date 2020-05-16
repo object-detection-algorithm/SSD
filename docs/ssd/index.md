@@ -28,8 +28,6 @@
 * 输入图像尺寸为$300\times 300$
 * 数据集为`PASCAL VOC`
 
-最后再进一步扩充到$500\times 500$的场景
-
 ## 相关阅读
 
 * [【SSD算法】史上最全代码解析-核心篇](https://zhuanlan.zhihu.com/p/79854543?from_voters_page=true)
