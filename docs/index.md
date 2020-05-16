@@ -20,3 +20,4 @@
 * 匹配策略
 * 损失函数
 * Hard Negative Mining
+* variance变量
