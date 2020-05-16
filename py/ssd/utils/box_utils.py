@@ -104,7 +104,7 @@ def assign_priors(gt_boxes, gt_labels, corner_form_priors,
     # best_prior_per_target_index：每个标注框对应最高IoU的先验框下标
     best_prior_per_target, best_prior_per_target_index = ious.max(0)
 
-    # 再一次确保标注框与最高IoU的先验框匹配
+    # 确保标注框与最高IoU的先验框匹配
     for target_index, prior_index in enumerate(best_prior_per_target_index):
         best_target_per_prior_index[prior_index] = target_index
 
