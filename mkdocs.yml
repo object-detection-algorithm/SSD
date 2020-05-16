@@ -69,3 +69,4 @@ nav:
         - 先验框: ssd/prior_boxes.md
         - 匹配策略: ssd/matching_strategy.md
         - 损失函数: ssd/loss_function.md
+        - 'Hard Negative Mining': ssd/hard_negative_mining.md
