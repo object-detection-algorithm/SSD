@@ -25,8 +25,9 @@ class SSDTargetTransform:
             gt_boxes = torch.from_numpy(gt_boxes)
         if type(gt_labels) is np.ndarray:
             gt_labels = torch.from_numpy(gt_labels)
-        boxes, labels = box_utils.assign_priors(gt_boxes, gt_labels,
-                                                self.corner_form_priors, self.iou_threshold)
+        # boxes: [num_priors, 4] 每个先验框对应的标注框坐标
+        # labels: [num_priors] 每个先验框对应标签
+        boxes, labels = box_utils.assign_priors(gt_boxes, gt_labels, self.corner_form_priors, self.iou_threshold)
         boxes = box_utils.corner_form_to_center_form(boxes)
         locations = box_utils.convert_boxes_to_locations(boxes, self.center_form_priors, self.center_variance,
                                                          self.size_variance)

@@ -11,8 +11,7 @@ import torch
 import math
 
 
-def convert_locations_to_boxes(locations, priors, center_variance,
-                               size_variance):
+def convert_locations_to_boxes(locations, priors, center_variance, size_variance):
     """Convert regressional location results of SSD into boxes in the form of (center_x, center_y, h, w).
 
     The conversion:
