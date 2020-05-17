@@ -11,7 +11,7 @@ from ssd.data.datasets import COCODataset, VOCDataset
 import argparse
 import numpy as np
 
-from ssd.data.transform import build_transforms
+from ssd.data.transforms import build_transforms
 from ssd.models.detector import build_detection_model
 from ssd.utils import mkdir
 from ssd.utils.checkpoint import CheckPointer
