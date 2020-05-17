@@ -73,7 +73,13 @@ nav:
             - 损失函数: ssd/loss_function.md
             - 'Hard Negative Mining': ssd/hard_negative_mining.md
             - variance变量: ssd/variance.md 
-        - 训练:
-            - 使用命令: ssd/using_command.md
-            - 训练日志: ssd/train_res.md
-            - 测试日志: ssd/test_res.md
+        - 具体实现:
+            - 命令行操作: ssd/using_command.md
+            - 训练:
+                - 训练流程: ssd/train_process.md
+                - 训练日志: ssd/train_res.md
+            - 测试:
+                - 测试流程: ssd/test_process.md
+                - 测试日志: ssd/test_res.md
+            - 使用:
+                - 使用日志: ssd/demo_res.md
