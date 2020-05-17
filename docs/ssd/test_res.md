@@ -3,6 +3,8 @@
 
 测试检测结果，计算`FPS`
 
+## 测试日志
+
 ```
 $ python demo.py --config-file configs/vgg_ssd300_voc0712.yaml --images_dir demo --ckpt outputs/vgg_ssd300_voc0712/model_final.pth 
 Namespace(ckpt='outputs/vgg_ssd300_voc0712/model_final.pth', config_file='configs/vgg_ssd300_voc0712.yaml', dataset_type='voc', images_dir='demo', opts=[], output_dir='demo/result', score_threshold=0.7)
@@ -83,4 +85,29 @@ Consider using one of the following signatures instead:
 (0003/0005) 003123.jpg: objects 08 | load 004ms | inference 012ms | FPS 81
 (0004/0005) 000342.jpg: objects 02 | load 003ms | inference 013ms | FPS 79
 (0005/0005) 008591.jpg: objects 02 | load 004ms | inference 013ms | FPS 77
+```
+
+## 分析
+
+第一次推导时间（`inference 170ms`）大大超过后续的推导时间（`inference 014ms`）
+
+相关文件
+
+* `py/ssd/models/box_head/box_head.py`
+
+第一次推导需要额外计算先验框，所以需要更多的推导时间
+
+```
+@registry.BOX_HEADS.register('SSDBoxHead')
+class SSDBoxHead(nn.Module):
+    def __init__(self, cfg):
+        。。。
+        。。。
+        self.priors = None
+
+    def _forward_test(self, cls_logits, bbox_pred):
+        if self.priors is None:
+            self.priors = PriorBox(self.cfg)().to(bbox_pred.device)
+        。。。
+        。。。
 ```
