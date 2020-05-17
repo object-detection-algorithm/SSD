@@ -66,9 +66,12 @@ nav:
             - 检查点读写: util/checkpoint.md
     - SSD算法:
         - 引言: ssd/index.md
-        - 基础网络: ssd/base_network.md
-        - 先验框: ssd/prior_boxes.md
-        - 匹配策略: ssd/matching_strategy.md
-        - 损失函数: ssd/loss_function.md
-        - 'Hard Negative Mining': ssd/hard_negative_mining.md
-        - variance变量: ssd/variance.md 
+        - 原理解析:
+            - 基础网络: ssd/base_network.md
+            - 先验框: ssd/prior_boxes.md
+            - 匹配策略: ssd/matching_strategy.md
+            - 损失函数: ssd/loss_function.md
+            - 'Hard Negative Mining': ssd/hard_negative_mining.md
+            - variance变量: ssd/variance.md 
+        - 训练:
+            - 训练日志: ssd/train_res.md

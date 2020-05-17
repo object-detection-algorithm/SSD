@@ -16,9 +16,12 @@
 ## SSD算法
 
 * 引言
-* 基础网络
-* 先验框
-* 匹配策略
-* 损失函数
-* Hard Negative Mining
-* variance变量
+* 原理解析
+    * 基础网络
+    * 先验框
+    * 匹配策略
+    * 损失函数
+    * `Hard Negative Mining`
+    * `variance`变量
+* 训练
+    * 训练日志
