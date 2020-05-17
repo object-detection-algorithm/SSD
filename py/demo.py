@@ -56,6 +56,7 @@ def run_demo(cfg, ckpt, score_threshold, images_dir, output_dir, dataset_type):
         result = result.resize((width, height)).to(cpu_device).numpy()
         boxes, labels, scores = result['boxes'], result['labels'], result['scores']
 
+        # 置信度阈值
         indices = scores > score_threshold
         boxes = boxes[indices]
         labels = labels[indices]
