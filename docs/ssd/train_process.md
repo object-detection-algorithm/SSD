@@ -23,6 +23,9 @@
 * 模型
     * 基础网络：`VGG16`
     * 损失函数：`SmoothL1 Loss + Softmax Loss`
+* 目标检测：
+    * 中心坐标的标准方差（`CENTER_VARIANCE`）：`0.1`
+    * 长宽的标准方差（`SIZE_VARIANCE`）：`0.2`
 
 ## 训练流程
 

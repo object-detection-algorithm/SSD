@@ -1,9 +1,9 @@
 
-# 测试日志
+# 使用日志
 
 测试检测结果，计算`FPS`
 
-## 测试日志
+## 使用日志
 
 ```
 $ python demo.py --config-file configs/vgg_ssd300_voc0712.yaml --images_dir demo --ckpt outputs/vgg_ssd300_voc0712/model_final.pth 

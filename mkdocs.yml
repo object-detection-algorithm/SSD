@@ -82,4 +82,5 @@ nav:
                 - 测试流程: ssd/test_process.md
                 - 测试日志: ssd/test_res.md
             - 使用:
+                - 使用示例: ssd/demo_process.md
                 - 使用日志: ssd/demo_res.md
