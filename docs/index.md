@@ -24,4 +24,6 @@
     * `Hard Negative Mining`
     * `variance`变量
 * 训练
+    * 执行命令
     * 训练日志
+    * 测试日志

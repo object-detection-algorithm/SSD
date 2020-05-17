@@ -74,4 +74,6 @@ nav:
             - 'Hard Negative Mining': ssd/hard_negative_mining.md
             - variance变量: ssd/variance.md 
         - 训练:
+            - 使用命令: ssd/using_command.md
             - 训练日志: ssd/train_res.md
+            - 测试日志: ssd/test_res.md
