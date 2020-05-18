@@ -14,7 +14,7 @@
 
 ```
 # 单GPU训练
-$ python test.py --config-file configs/vgg_ssd300_voc0712.yaml
+$ python train.py --config-file configs/vgg_ssd300_voc0712.yaml
 ```
 
 ## 测试
