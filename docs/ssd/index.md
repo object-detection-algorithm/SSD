@@ -17,3 +17,4 @@
 ## 相关阅读
 
 * [【SSD算法】史上最全代码解析-核心篇](https://zhuanlan.zhihu.com/p/79854543?from_voters_page=true)
+* [目标检测|SSD原理与实现](https://zhuanlan.zhihu.com/p/33544892)

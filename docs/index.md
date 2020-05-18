@@ -13,6 +13,8 @@
 5. 优化器模块
 6. 辅助模块
 
+![](./imgs/arch.png)
+
 ## SSD算法
 
 * 引言
@@ -35,3 +37,8 @@
     * 使用
         * 使用示例
         * 使用日志
+
+## 相关文档
+
+* [学习 SSD: Single Shot MultiBox Detector](https://blog.zhujian.life/posts/4adff177.html)
+* [目标检测训练框架](https://blog.zhujian.life/posts/902134ce.html)
