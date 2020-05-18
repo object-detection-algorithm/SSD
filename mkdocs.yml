@@ -73,6 +73,7 @@ nav:
             - 损失函数: ssd/loss_function.md
             - 'Hard Negative Mining': ssd/hard_negative_mining.md
             - variance变量: ssd/variance.md 
+            - '300 vs. 512': ssd/300-vs-512.md
         - 具体实现:
             - 命令行操作: ssd/using_command.md
             - 训练:

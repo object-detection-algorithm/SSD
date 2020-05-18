@@ -23,6 +23,7 @@
     * 损失函数
     * `Hard Negative Mining`
     * `variance`变量
+    * `300 vs. 512`
 * 具体实现
     * 命令行操作
     * 训练
