@@ -85,3 +85,4 @@ nav:
             - 使用:
                 - 使用示例: ssd/demo_process.md
                 - 使用日志: ssd/demo_res.md
+            - 输入设置为512: ssd/input-512.md
