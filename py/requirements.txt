@@ -4,7 +4,7 @@
 # demo.py: 6
 # ssd/data/datasets/coco.py: 4
 # ssd/data/datasets/voc.py: 5
-Pillow == 6.2.0
+Pillow == 8.2.0
 
 # demo.py: 7
 Vizer == 0.1.5
