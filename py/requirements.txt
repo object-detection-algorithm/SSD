@@ -40,7 +40,7 @@ matplotlib == 3.1.2
 # ssd/data/transforms/subtract_means.py: 10
 # ssd/data/transforms/to_tensor.py: 11
 # ssd/utils/metric_logger.py: 2
-numpy == 1.17.2
+numpy == 1.22.0
 
 # ssd/data/transforms/color/convert_color.py: 10
 # ssd/data/transforms/color/photometric_distort.py: 41
